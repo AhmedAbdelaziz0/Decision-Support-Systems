@@ -69,7 +69,7 @@ If you already had a different re in your code you could use an alias:
 
 ```python
 import numpy as np
-my_array = numpy.ones(3)
+my_array = np.ones(3)
 ```
 
 You might also do this if your module has an unwieldy name or if you’re going to be typing it a lot.
@@ -121,7 +121,7 @@ x = apply_to_one(my_double) # equals 2
 Function parameters can also be given default arguments, which only need to be specified when you want a value other than the default:
 ```python
 def my_print(message="my default message"):
-    print message
+    print(message)
 
 my_print("hello") # prints 'hello'
 my_print() # prints 'my default message'
